@@ -7,7 +7,7 @@ public class Point {
     }
 
     public String toSvg() {
-        return "<circle r=\"45\" cx=\"" + this.x + " cy=\"" + this.y + "\" fill=\"red\"/>";
+        return "<circle r=\"45\" cx=\"" + this.x + "\" cy=\"" + this.y + "\" fill=\"red\"/>";
     }
 
     public void translate(double dx, double dy)  {
