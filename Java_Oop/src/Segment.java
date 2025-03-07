@@ -1,15 +1,17 @@
-public class Segment {
-    public Point start, end;
+class Segment {
+    Point start;
+    private Point end;
 
-    
-    public Segment() {
-        this.start = new Point();
-        this.end = new Point();
+    public Segment(Point start, Point end) {
+        this.start = new Point(start);
+        this.end = new Point(end);
     }
 
-   
-    public Segment(Point start, Point end) {
-        this.start = start;
+    public Point getEnd() {
+        return end;
+    }
+
+    public void setEnd(Point end) {
         this.end = end;
     }
 
@@ -17,7 +19,7 @@ public class Segment {
         return Math.sqrt(Math.pow((this.end.x - this.start.x), 2) + Math.pow((this.end.y - this.start.y), 2));
     }
 
-    
+    @Override
     public String toString() {
         return "Segment[start=" + start.toString() + ", end=" + end.toString() + "]";
     }
