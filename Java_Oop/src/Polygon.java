@@ -46,4 +46,5 @@ public class Polygon {
         result += "\" style=\"fill:none;stroke:black;stroke-width:1\" />";
         return result;
     }
+
 }
